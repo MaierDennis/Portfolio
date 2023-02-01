@@ -1,0 +1,73 @@
+.about-me-container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.headline-about-me {
+    font-size: 35px;
+}
+
+.description-about-me {
+    //max-width: 45vw;
+}
+
+.specification-about-me {
+    display: flex;
+    flex-direction: column;
+    //max-width: 45vw;
+}
+
+.bulb-puzzle {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        height: 45px;
+        width: 40px;
+        padding-right: 40px;
+    }
+}
+
+.about-me-picture {
+   max-width: 50vw;
+    img {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.image-line {
+    position: absolute;
+    width: 100vw !important;
+    top: 500px;
+}
+
+.shadow {
+    position: absolute;
+    bottom: -250px;
+    overflow-y: hidden;
+    
+    img {
+        width: 100vw !important;
+        height: 450px;
+    }
+}
