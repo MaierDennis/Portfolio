@@ -19,5 +19,9 @@
         color: white;
         text-decoration: none;
         padding: 15px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

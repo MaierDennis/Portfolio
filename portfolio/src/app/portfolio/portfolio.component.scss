@@ -1,0 +1,43 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+    
+
+.line-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+
+
+    img{
+        height: 3px;
+        width: 40px;
+        padding-right: 60px;
+    }
+}
+
+.description {
+    padding-left: 100px;
+    padding-bottom: 60px;
+    max-width: 400px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    img {
+        height: 450px;
+        width: 450px;
+        padding: 20px;
+    }
+}

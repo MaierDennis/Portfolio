@@ -18,15 +18,13 @@
     display: flex;
     flex-direction: column;
     width: 500px;
+    z-index: 1;
 }
 
 .headline-about-me {
     font-size: 35px;
 }
 
-.description-about-me {
-    //max-width: 45vw;
-}
 
 .specification-about-me {
     display: flex;

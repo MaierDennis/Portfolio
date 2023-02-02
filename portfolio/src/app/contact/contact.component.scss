@@ -1,0 +1,120 @@
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.message-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.description {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+}
+
+.message-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-small {
+    margin-bottom: 25px;
+    width: 550px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #4B47FF;
+    color: rgba(252, 251, 251, 0.8);
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+
+        &::placeholder {
+            color: white;
+            font-size: 14px;
+        }
+
+        &:hover {
+            border: 1px solid #00BEE8;
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none !important;
+            border: 1px solid #00BEE8;
+        }
+
+}
+
+
+.input-big {
+    margin-bottom: 20px;
+    width: 550px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #4B47FF;
+    color: rgba(252, 251, 251, 0.8);
+    padding-left: 10px;
+    box-sizing: border-box;
+    resize: none;
+    padding-top: 10px;
+    font-size: 15px;
+
+        &::placeholder {
+            color: white;
+            font-size: 14px;
+        }
+
+        &:hover {
+            border: 1px solid #00BEE8;
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none !important;
+            border: 1px solid #00BEE8;
+        }
+}
+
+.go-up-arrow {
+    position:absolute; 
+    bottom: 50px; 
+    right: 100px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.biggest-shadow {
+    position: absolute;
+    right: -400px;
+    bottom: -750px;
+}
