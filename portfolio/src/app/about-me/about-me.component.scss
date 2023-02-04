@@ -49,6 +49,7 @@
    max-width: 50vw;
     img {
         position: absolute;
+        height: 650px;
         right: 10px;
     }
 }
@@ -68,4 +69,255 @@
         width: 100vw !important;
         height: 450px;
     }
+}
+
+@media(max-width: 1200px){
+
+    .headline-about-me {
+        font-size: 30px;
+    }
+
+    .about-me-text {
+        width: 400px;
+    }
+
+    .description-about-me {
+        font-size: 15px;
+    }
+
+    .specification-about-me {
+        font-size: 15px;
+    }
+
+    .bulb-puzzle {
+        padding-top: 20px;
+    }
+
+    .about-me-picture {
+         img {
+             position: absolute;
+             right: -50px;
+             height: 600px;
+             top: 100px;
+         }
+     }
+    
+
+}
+
+@media(max-width: 1000px){
+    .about-me-container {
+        height: 90vh;
+    }
+
+    .about-me {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-me-text {
+        width: 350px;
+    }
+
+    .description-about-me {
+        font-size: 13px;
+    }
+
+    .specification-about-me {
+        font-size: 13px;
+    }
+
+    .bulb-puzzle {
+        padding-top: 10px;
+    }
+
+    .about-me-picture {
+         img {
+             position: absolute;
+             right: -60px;
+             height: 550px;
+             top: 100px;
+         }
+     }
+    
+
+}
+@media(max-width: 850px){
+    .about-me-container {
+        height: 80vh;
+    }
+
+    .about-me {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .headline-about-me {
+        font-size: 22px;
+    }
+
+    .about-me-text {
+        width: 300px;
+    }
+
+    .description-about-me {
+        font-size: 11px;
+    }
+
+    .specification-about-me {
+        font-size: 11px;
+    }
+
+    .bulb-puzzle {
+        padding-top: 30px;
+        img {
+            height: 35px;
+            width: 30px;
+            padding-right: 20px;
+        }
+    }
+
+    .about-me-picture {
+         img {
+             position: absolute;
+             right: -10px;
+             height: 450px;
+             top: 60px;
+         }
+     }
+    
+
+}
+
+@media(max-width: 750px){
+    .about-me-container {
+        height: 75vh;
+    }
+    
+    .headline-about-me {
+        font-size: 20px;
+    }
+
+    .about-me-text {
+        width: 260px;
+    }
+
+
+    .bulb-puzzle {
+        padding-top: 20px;
+        img {
+            height: 32px;
+            width: 28px;
+            padding-right: 20px;
+        }
+    }
+
+    .about-me-picture {
+         img {
+             position: absolute;
+             right: -10px;
+             height: 360px;
+             top: 130px;
+         }
+     }
+    
+}
+
+@media(max-width: 650px){
+    .about-me-container {
+        height: 73vh;
+    }
+    
+    .headline-about-me {
+        font-size: 20px;
+    }
+
+    .about-me-text {
+        width: 230px;
+    }
+
+    .description-about-me {
+        font-size: 10px;
+    }
+
+    .specification-about-me {
+        font-size: 10px;
+    }
+
+    .bulb-puzzle {
+        padding-top: 20px;
+        img {
+            height: 30px;
+            width: 26px;
+            padding-right: 10px;
+        }
+    }
+
+    .about-me-picture {
+         img {
+             position: absolute;
+             right: -30px;
+             height: 300px;
+             top: 130px;
+         }
+     }
+    
+}
+
+@media(max-width: 550px){
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-me-container {
+        height: 100vh;
+    }
+    
+    .headline-about-me {
+        font-size: 20px;
+    }
+
+    .about-me-text {
+        width: 100%;
+    }
+
+    .description-about-me {
+        font-size: 13px;
+    }
+
+    .specification-about-me {
+        font-size: 13px;
+    }
+
+    .bulb-puzzle {
+        padding-top: 20px;
+        img {
+            height: 37px;
+            width: 37px;
+            padding-right: 10px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .about-me-picture {
+        display: flex;
+             justify-content: center;
+             align-items: center;
+         img {
+             position: relative;
+             right: 20px;
+             height: 300px;
+             top: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+     }
+    
 }
