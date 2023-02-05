@@ -44,11 +44,20 @@
     padding-left: 100px;
     padding-right: 100px;
 
+    
+}
+
+.portfolio-img {
+    position: relative;
+    height: 36vw;
+    width: 36vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     img {
-        height: 36vw;
-        width: 36vw;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
 }
 
