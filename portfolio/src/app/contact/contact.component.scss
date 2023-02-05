@@ -9,12 +9,20 @@
     padding-bottom: 200px;
     max-height: 90vh;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .heading {
     display: flex;
     align-items: center;
     font-size: 35px;
+
+    img {
+        position: absolute; 
+        right: 0; 
+        width: 30vw;
+        height: 3px;
+    }
 }
 
 .message-part {
@@ -232,5 +240,13 @@
 
     .input-big {
         width: calc(100vw - 30px);
+    }
+}
+
+@media (max-width: 450px){
+    .heading {
+        img {
+            width: 24vw;
+        }
     }
 }
