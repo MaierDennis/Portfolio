@@ -51,8 +51,8 @@
     position: relative;
     height: 36vw;
     width: 36vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     img {
         position: absolute;
@@ -78,11 +78,11 @@
 
         padding-left: 50px;
         padding-right: 50px;
+    }
 
-        img {
-            height: 40vw;
-            width: 40vw;
-        }
+    .portfolio-img {
+        height: 36vw;
+        width: 36vw;
     }
 
     .description {
@@ -139,9 +139,10 @@
     .projects {
         justify-content: center;
 
-        img {
-            width: 70vw;
-            height: 70vw;
-        }
+    }
+
+    .portfolio-img {
+        height: 70vw;
+        width: 70vw;
     }
 }

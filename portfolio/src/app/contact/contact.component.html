@@ -23,14 +23,14 @@
         </div>
 
         <div class="message-boxes">
-            <form onsubmit="" class="message-boxes">
-           <input class="input-small" required type="text" placeholder="Your name">
+            <form (submit)="sendMail()" ngNativeValidate class="message-boxes" #myForm>
+           <input class="input-small" required type="text" name="name" placeholder="Your name" #nameField>
 
-           <input class="input-small" required  type="email" placeholder="Your email">
+           <input class="input-small" required  type="email" name="email" placeholder="Your email" #emailField>
 
-           <textarea class="input-big" required placeholder="Your message"></textarea>
+           <textarea class="input-big" required name="message" placeholder="Your message" style="padding: 10px;" #messageField></textarea>
 
-            <button mat-raised-button style="background-color: #00BEE8;" color="primary">Send message :)</button>
+            <button type="submit" mat-raised-button style="background-color: #00BEE8;" color="primary" #sendButton>Send message :)</button>
         </form>
         </div>
     </div>

@@ -1,19 +1,20 @@
-<div class="header">
+<div  (window:resize)="onResize($event)" class="header">
   <div class="header-name">
     Dennis
   </div>
 
-  <!--<div class="header-navigation">
+  <div  *ngIf="!mobile" class="header-navigation">
         <a href="#">About me</a>
         <a href="#">Skills</a>
         <a href="#">Portfolio</a>
-    </div>-->
+    </div>
 
-  <div>
+    <div *ngIf="mobile">
     <button mat-button [matMenuTriggerFor]="menu"><img src="assets/img/burger.png"></button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
+      <button mat-menu-item>About me</button>
+      <button mat-menu-item>Skills</button>
+      <button mat-menu-item>Portfolio</button>
     </mat-menu>
 
   </div>

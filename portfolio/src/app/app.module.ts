@@ -36,6 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatMenuModule,
     FormsModule,
+    ReactiveFormsModule,
     MatIconModule,
     BrowserAnimationsModule
   ],
