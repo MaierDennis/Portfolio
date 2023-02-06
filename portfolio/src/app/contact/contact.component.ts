@@ -40,9 +40,11 @@ export class ContactComponent {
     }
     );
 
-    nameField.value = '';
+    setTimeout(() => {
+      nameField.value = '';
     emailField.value = '';
     messageField.value = '';
+    }, 1000);
 
     nameField.disabled = false;
     emailField.disabled = false;
