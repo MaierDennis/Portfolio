@@ -8,6 +8,11 @@ body {
     position: relative;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh; 
+}
+
 
 
 html, body { height: 100%; }

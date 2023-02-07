@@ -7,21 +7,85 @@
         </div>
 
         <div class="description">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, dolorum maxime nulla tempore quidem ipsa ducimus deleniti necessitatibus ea eius temporibus est natus corporis a officiis quod! Consectetur, ducimus pariatur?</p>
+            <p>This page is a sample of my work! Scroll down to view other projects I have developed.</p>
         </div>
     </div>
 
 
     <div class="projects">
-        <div class="portfolio-img"><img src="assets/img/pollo_loco_laptop.png"></div>
-        <div class="portfolio-img"><img src="assets/img/join_laptop.png"></div>
-        <div class="portfolio-img"><img src="assets/img/join_laptop.png"></div>
-        <div class="portfolio-img"><img src="assets/img/pokedex_laptop.png"></div>
+        <div (mouseenter)="changePolloLoco=true" (mouseleave)="changePolloLoco=false" class="portfolio-img">
+            <img src="assets/img/El_Pollo_Loco_Laptop.png">
+            <div *ngIf="changePolloLoco" class="hover-project">
+                <div class="hover-buttons">
+                    <button mat-button color="primary">Github</button>
+                    <button mat-button color="primary">Live Test</button>
+                </div>
+
+                <div class="hover-description">
+                    <div class="hover-text">
+                        <h3>El Pollo Loco</h3>
+                        <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen</p>
+                        <p style="color: #00BEE8;">JavaScript | HTML | CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div (mouseenter)="changeJoin=true" (mouseleave)="changeJoin=false" class="portfolio-img">
+            <img src="assets/img/logo_join.png">
+            <div *ngIf="changeJoin" class="hover-project">
+                <div class="hover-buttons">
+                    <button mat-button color="primary">Github</button>
+                    <button mat-button color="primary">Live Test</button>
+                </div>
+
+                <div class="hover-description">
+                    <div class="hover-text">
+                        <h3>Join</h3>
+                        <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                        <p style="color: #00BEE8;">JavaScript | HTML | CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div (mouseenter)="changePortfolio=true" (mouseleave)="changePortfolio=false" class="portfolio-img">
+            <img src="assets/img/pokedex_laptop.png">
+            <div *ngIf="changePortfolio" class="hover-project">
+                <div class="hover-buttons">
+                    <button mat-button color="primary">Github</button>
+                    <button mat-button color="primary">Live Test</button>
+                </div>
+
+                <div class="hover-description">
+                    <div class="hover-text">
+                        <h3>Pokedex</h3>
+                        <p>Bades on the PokeAPI a simple libary that provides and catalogues pokemon information.</p>
+                        <p style="color: #00BEE8;">JavaScript | HTML | CSS | API</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div (mouseenter)="changePokedex=true" (mouseleave)="changePokedex=false" class="portfolio-img">
+            <img src="assets/img/portfolio_laptop.png">
+            <div *ngIf="changePokedex" class="hover-project">
+                <div class="hover-buttons">
+                    <button mat-button color="primary">Github</button>
+                    <button mat-button color="primary">Live Test</button>
+                </div>
+
+                <div class="hover-description">
+                    <div class="hover-text">
+                        <h3>Pokedex</h3>
+                        <p>Jump, Run sdafudsh fdkjlghfagl iufghfk jlgas gdfhaljgkh gfdjgh fdjgh</p>
+                        <p style="color: #00BEE8;">JavaScript | HTML | CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <div>
-        <img style="position: absolute; top: 700px; z-index: -1;" src="assets/img/light_blue_shadow.png">
+        <img style="position: absolute; top: 100px; z-index: -1;" src="assets/img/light_blue_shadow.png">
     </div>
 
 

@@ -1,9 +1,9 @@
 <div class="contact">
 
     <div class="heading">
-            <h1>Contact</h1>
+        <h1>Contact</h1>
 
-            <img src="assets/img/line_blue_long.png">
+        <img src="assets/img/line_blue_long.png">
     </div>
 
 
@@ -14,30 +14,42 @@
                 <h1>Got a problem to solve?</h1>
             </div>
             <div class="contact-text">
-                <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
+                <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
+                    your projects with my work.
                     <br>
-                    Need a Frontend developer? <b>Contact me!</b> 
+                    Need a Frontend developer? <b>Contact me!</b>
                 </p>
             </div>
 
         </div>
 
-        <div class="message-boxes">
+        <div>
             <form (submit)="sendMail()" ngNativeValidate class="message-boxes" #myForm>
-           <input class="input-small" required type="text" name="name" placeholder="Your name" #nameField>
+                <input class="input-small" required type="text" name="name" placeholder="Your name" #nameField
+                    [disabled]="send">
 
-           <input class="input-small" required  type="email" name="email" placeholder="Your email" #emailField>
+                <input class="input-small" required type="email" name="email" placeholder="Your email" #emailField
+                    [disabled]="send">
 
-           <textarea class="input-big" required name="message" placeholder="Your message" style="padding: 10px;" #messageField></textarea>
+                <textarea class="input-big" required name="message" placeholder="Your message" style="padding: 10px;"
+                    #messageField [disabled]="send"></textarea>
 
-            <button type="submit" mat-raised-button style="background-color: #00BEE8;" color="primary" #sendButton>Send message :)</button>
-        </form>
+                <div style="width: 100%;">
+                    <p class="sent-or-not" style="color: red; " *ngIf="failed">Ups, there was a mistake... please try
+                        again</p>
+                    <p class="sent-or-not" style="color: greenyellow;" *ngIf="sendSuccess">Email sent!</p>
+                </div>
+                <button type="submit" mat-raised-button style="background-color: #00BEE8;" color="primary" #sendButton
+                    [disabled]="send">Send message :)</button>
+            </form>
         </div>
     </div>
 
 
     <div>
-        <img class="go-up-arrow" src="assets/img/go_up_arrow.png">
+        <a href="#introduction">
+            <img class="go-up-arrow" src="assets/img/go_up_arrow.png">
+        </a>
         <img class="biggest-shadow" src="assets/img/shadow_blue_biggest.png">
     </div>
 

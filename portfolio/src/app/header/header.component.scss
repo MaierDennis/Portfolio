@@ -19,14 +19,16 @@
 }
 
 .header-navigation {
+    z-index: 2;
     a {
         font-size: 25px;
         color: white;
         text-decoration: none;
         padding: 15px;
+        
 
         &:hover {
-            cursor: pointer;
+            color: #00BEE8;
         }
     }
 }
@@ -75,9 +77,5 @@
 
     .header-name {
         font-size: 20px;
-    }
-
-    .header-navigation {
-        display: none;
     }
 }

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
-
+changePolloLoco: boolean = false;
+changeJoin: boolean = false;
+changePortfolio: boolean = false;
+changePokedex: boolean = false;
 }

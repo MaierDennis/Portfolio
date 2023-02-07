@@ -12,44 +12,48 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  async sendMail() {
-    //action="https:dennis-maier.developerakademie.net/Portfolio/send_mail/send_mail.php" 
-
-    console.log('send mail', this.myForm);
-
-    let nameField = this.nameField.nativeElement;
-    let emailField = this.nameField.nativeElement;
-    let messageField = this.nameField.nativeElement;
-    let sendButton = this.nameField.nativeElement;
-
-    nameField.disabled = true;
-    emailField.disabled = true;
-    messageField.disabled = true;
-    sendButton.disabled = true;
-
-    let fd = new FormData();
-    fd.append('name', nameField.value);
-    fd.append('email', emailField.value);
-    fd.append('message', messageField.value);
-
-    await fetch('https:dennis-maier.developerakademie.net/Portfolio/send_mail/send_mail.php',
-    {
-      method: 'POST',
-      body: fd
-
+  send :boolean = false;
+  sendSuccess : boolean = false;
+  failed : boolean = false;
+  
+    async sendMail(){
+      this.failed = false;
+      this.sendSuccess = false;
+      this.send = true;
+      let fd = new FormData();
+      this.setFormData(fd);
+      await this.sendData(fd);
+      this.resetInputs();
+      this.send = false;
+      if(!this.failed){
+        this.sendSuccess = true;
+      }
     }
-    );
-
-    setTimeout(() => {
-      nameField.value = '';
-    emailField.value = '';
-    messageField.value = '';
-    }, 1000);
-
-    nameField.disabled = false;
-    emailField.disabled = false;
-    messageField.disabled = false;
-    sendButton.disabled = false;
-  }
-
+  
+    async sendData(fd:FormData){
+      try{
+        let response = await fetch('https://dennis-maier.developerakademie.net/Portfolio/send_mail/send_mail.php', {
+          method: 'POST',
+          body: fd
+        });
+        if(!response.ok){
+          throw await response.json();
+        }
+      }catch(e){
+        this.failed = true;
+      }
+    }
+  
+    setFormData(fd: FormData){
+      fd.append('name', this.nameField.nativeElement.value);
+      fd.append('email', this.emailField.nativeElement.value);
+      fd.append('message', this.messageField.nativeElement.value);
+    }
+  
+    resetInputs(){
+      this.nameField.nativeElement.value = '';
+      this.emailField.nativeElement.value = '';
+      this.messageField.nativeElement.value = '';
+    }
 }
+

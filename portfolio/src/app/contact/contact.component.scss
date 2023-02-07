@@ -18,8 +18,8 @@
     font-size: 35px;
 
     img {
-        position: absolute; 
-        right: 0; 
+        position: absolute;
+        right: 0;
         width: 30vw;
         height: 3px;
     }
@@ -31,6 +31,7 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 30px;
+    
 }
 
 .description {
@@ -121,9 +122,11 @@
     position: absolute;
     bottom: 50px;
     right: 100px;
+    z-index: 2;
 
     &:hover {
         cursor: pointer;
+        transform: scale(1.2);
     }
 }
 
@@ -131,6 +134,14 @@
     position: absolute;
     right: -400px;
     bottom: -750px;
+}
+
+.sent-or-not {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 @media(max-width: 1200px) {
@@ -166,12 +177,18 @@
     .input-big {
         width: 400px;
     }
+
+    .go-up-arrow {
+        bottom: 50px;
+        right: 50px;
+        z-index: 2;
+    }
 }
 
 @media(max-width: 850px) {
     .contact {
         padding-top: 10px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
 
     .message-part {
@@ -185,10 +202,11 @@
     }
 
     .description {
-        max-width: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         padding-bottom: 50px;
+        align-items: center;
     }
 
     .headline {
@@ -227,11 +245,12 @@
 @media(max-width: 550px) {
 
     .description {
-        width: calc(100vw - 30px); 
+        width: calc(100vw - 30px);
     }
 
     .headline {
-        width: 100%;
+        width: 70vw;
+        text-align: center;
     }
 
     .input-small {
@@ -241,9 +260,16 @@
     .input-big {
         width: calc(100vw - 30px);
     }
+
+    .go-up-arrow {
+        bottom: 20px;
+        right: 20px;
+        z-index: 2;
+        height: 30px;
+    }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
     .heading {
         img {
             width: 24vw;

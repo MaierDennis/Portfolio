@@ -39,20 +39,28 @@
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-
-    
+    border-radius: 10px;
 }
 
 .portfolio-img {
     position: relative;
-    height: 36vw;
-    width: 36vw;
+    height: 23vw;
+    width: 23vw;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+    border: 2px solid #00BEE8;
+    border-radius: 10px;
+    &:hover {
+        img {
+            animation: zoomIn 1s;
+            animation-fill-mode: forwards;
+        }
+    }
 
     img {
         position: absolute;
@@ -61,11 +69,158 @@
     }
 }
 
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes flyIn {
+    from {
+        bottom: 0;
+        height: 0%;
+    }
+
+    to {
+        bottom: 0;
+        height: 100%;
+    }
+}
+
+.hover-project {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(20, 29, 47, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: flyIn 0.3s ease-in-out;
+    
+}
+
+.hover-buttons {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    button {
+        width: 120px;
+        height: 50px;
+        border: 2px solid #00BEE8;
+        font-size: 21px;
+        font-weight: 200;
+        color: white;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: #00BEE8;
+        }
+        
+    }
+}
+
+.hover-description {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.hover-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    max-width: 80%;
+    h3 {
+        margin: 0 !important;
+        margin-bottom: 18px !important;
+        font-size: 20px !important;
+    }
+    p {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 1600px ){
+    .hover-text {
+        h3 {
+            margin-bottom: 8px !important;
+            font-size: 20px !important;
+        }
+        p {
+            margin-bottom: 20px !important;
+            font-size: 18px !important;
+        }
+    }
+
+    .hover-buttons {
+        button {
+        width: 110px;
+        height: 40px;
+        font-size: 19px;
+        }
+    }
+}
+
+@media (max-width: 1450px ){
+    .hover-text {
+        h3 {
+            margin-bottom: 6px !important;
+            font-size: 18px !important;
+        }
+        p {
+            margin-bottom: 15px !important;
+            font-size: 16px !important;
+        }
+    }
+
+    .hover-buttons {
+        button {
+        width: 100px;
+        height: 40px;
+        font-size: 17px;
+        }
+    }
+}
+
 @media(max-width: 1200px) {
     .line-heading {
         font-size: 30px;
     }
 
+    .hover-text {
+        h3 {
+            margin-bottom: 5px !important;
+            font-size: 15px !important;
+        }
+        p {
+            margin-bottom: 10px !important;
+            font-size: 13px !important;
+        }
+    }
 }
 
 @media(max-width: 1000px) {
@@ -92,6 +247,15 @@
             font-size: 13px;
         }
     }
+
+    .hover-buttons {
+        button {
+            width: 110px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+    }
 }
 
 @media(max-width: 850px) {
@@ -106,11 +270,47 @@
             font-size: 11px;
         }
     }
+
+    .hover-text {
+        h3 {
+            margin-bottom: 4px !important;
+            font-size: 15px !important;
+        }
+        p {
+            margin-bottom: 10px !important;
+            font-size: 13px !important;
+        }
+    }
+
+    .hover-buttons {
+        button {
+            width: 90px;
+            height: 35px;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+    }
+
+    .hover-description {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
 }
 
 @media(max-width: 750px) {
     .line-heading {
         font-size: 20px;
+    }
+
+    .hover-text {
+        h3 {
+            margin: 0 !important;
+            font-size: 15px !important;
+        }
+        p {
+            margin: 5px !important;
+            font-size: 13px !important;
+        }
     }
 }
 
@@ -120,6 +320,26 @@
         
         p {
             font-size: 10px;
+        }
+    }
+
+    .hover-buttons {
+        button {
+            width: 80px;
+            height: 30px;
+            font-size: 13px;
+            border-radius: 8px;
+        }
+    }
+
+    .hover-text {
+        h3 {
+            margin: 0 !important;
+            font-size: 13px !important;
+        }
+        p {
+            margin: 5px !important;
+            font-size: 11px !important;
         }
     }
 }
@@ -144,5 +364,45 @@
     .portfolio-img {
         height: 70vw;
         width: 70vw;
+    }
+
+    .hover-buttons {
+        button {
+        width: 120px;
+        height: 50px;
+        font-size: 21px;
+        }
+    }
+
+    .hover-text {
+        h3 {
+            margin: 0 !important;
+            font-size: 17px !important;
+        }
+        p {
+            margin: 5px !important;
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .hover-buttons {
+        button {
+        width: 85px;
+        height: 30px;
+        font-size: 14px;
+        }
+    }
+
+    .hover-text {
+        h3 {
+            margin: 0 !important;
+            font-size: 15px !important;
+        }
+        p {
+            margin: 5px !important;
+            font-size: 13px !important;
+        }
     }
 }
