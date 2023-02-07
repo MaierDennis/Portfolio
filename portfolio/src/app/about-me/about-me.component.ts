@@ -1,4 +1,5 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 
 @Component({
@@ -6,5 +7,6 @@ import { Component, ElementRef, HostListener } from '@angular/core';
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss']
 })
-export class AboutMeComponent {
+export class AboutMeComponent{
+
 }
