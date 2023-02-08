@@ -39,7 +39,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $subject = "Contact From " . $_POST['name'];
         $headers = "From:  noreply@developerakademie.com";
 
-        mail($recipient, $subject, $_POST['message'], $headers);
+        mail($recipient, $subject, $_POST['email'], $_POST['message'], $headers);
         header("Location: " . $redirect); 
 
         break;
