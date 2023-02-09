@@ -6,15 +6,113 @@ body {
     max-width: 100%;
     overflow-x:hidden;
     position: relative;
-
     font-family: 'Poppins';
 }
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 10vh; 
+    scroll-padding-top: 3vh; 
 }
 
 
 html, body { height: 100%;}
 body { margin: 0;}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 75px !important;
+}
+
+h3 {
+    font-size: 50px !important;
+}
+
+p {
+    font-size: 17px;
+}
+
+@media (max-width: 1600px ){
+    
+}
+
+@media (max-width: 1450px ){
+    
+}
+
+@media(max-width: 1200px) {
+    h2 {
+        font-size: 60px !important;
+    }
+
+    h3 {
+        font-size: 40px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    h2 {
+        font-size: 58px !important;
+    }
+
+    h3 {
+        font-size: 35px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 850px) {
+    h2 {
+        font-size: 55px !important;
+    }
+}
+
+@media(max-width: 750px) {
+    h2 {
+        font-size: 50px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width: 650px) {
+    h2 {
+        font-size: 45px !important;
+    }
+
+    p {
+        font-size: 11px !important;
+    }
+}
+
+@media(max-width: 550px) {
+   h3 {
+    font-size: 30px !important;
+   } 
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 40px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+       }
+
+    p {
+        font-size: 10px !important;
+    }
+    
+}

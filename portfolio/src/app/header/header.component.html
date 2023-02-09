@@ -12,9 +12,9 @@
   <div *ngIf="mobile">
     <button mat-button [matMenuTriggerFor]="menu"><img src="assets/img/burger.png"></button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>About me</button>
-      <button mat-menu-item>Skills</button>
-      <button mat-menu-item>Portfolio</button>
+      <a href="#about-me"><button mat-menu-item>About me</button></a>
+      <a href="#skills"><button mat-menu-item>Skills</button></a>
+      <a href="#portfolio"><button mat-menu-item>Portfolio</button></a>
     </mat-menu>
 
   </div>

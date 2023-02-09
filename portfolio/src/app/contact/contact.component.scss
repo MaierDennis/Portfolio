@@ -7,7 +7,6 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 200px;
-    max-height: 90vh;
     overflow: hidden;
     max-width: 100%;
 }
@@ -207,6 +206,7 @@
         justify-content: center;
         padding-bottom: 50px;
         align-items: center;
+        max-width: 60%;
     }
 
     .headline {
