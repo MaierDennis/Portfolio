@@ -1,3 +1,8 @@
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -148,7 +153,7 @@
     align-items: center;
     text-align: center;
     height: 100%;
-    max-width: 80%;
+    max-width: 90%;
     h3 {
         margin: 0 !important;
         margin-bottom: 18px !important;

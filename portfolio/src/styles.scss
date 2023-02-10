@@ -30,7 +30,15 @@ h3 {
     font-size: 50px !important;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 p {
+    font-size: 17px;
+}
+
+span {
     font-size: 17px;
 }
 
@@ -39,7 +47,12 @@ p {
 }
 
 @media (max-width: 1450px ){
-    
+    span {
+        font-size: 14px;
+    } 
+    h4 {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -53,6 +66,14 @@ p {
 
     p {
         font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 11px;
     }
 }
 
@@ -68,17 +89,19 @@ p {
     p {
         font-size: 14px !important;
     }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 13px;
+    }
 }
 
 @media(max-width: 850px) {
     h2 {
-        font-size: 55px !important;
-    }
-}
-
-@media(max-width: 750px) {
-    h2 {
-        font-size: 50px !important;
+        font-size: 53px !important;
     }
 
     p {
@@ -86,13 +109,39 @@ p {
     }
 }
 
+@media(max-width: 750px) {
+    h2 {
+        font-size: 48px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 11px;
+    }
+}
+
 @media(max-width: 650px) {
     h2 {
-        font-size: 45px !important;
+        font-size: 41px !important;
     }
 
     p {
         font-size: 11px !important;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    span {
+        font-size: 10px;
     }
 }
 
@@ -100,6 +149,14 @@ p {
    h3 {
     font-size: 30px !important;
    } 
+
+   h4 {
+    font-size: 19px;
+}
+
+span {
+    font-size: 14px;
+}
 }
 
 @media (max-width: 400px) {
@@ -113,6 +170,14 @@ p {
 
     p {
         font-size: 10px !important;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 10px;
     }
     
 }
