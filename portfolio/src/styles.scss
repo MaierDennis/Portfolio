@@ -9,9 +9,18 @@ body {
     font-family: 'Poppins';
 }
 
+body::-webkit-scrollbar {
+    width: 0.5em;
+    } 
+    
+    body::-webkit-scrollbar-thumb {
+    background-color: #00BEE8;
+    border-radius: 4px;
+    }
+
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 3vh; 
+    scroll-padding-top: 0vh; 
 }
 
 

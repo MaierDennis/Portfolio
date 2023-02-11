@@ -55,6 +55,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    button{
+        font-weight: 400;
+        &:hover {
+            
+            transform: scale(1.1) ;
+        }
+    }
 }
 
 .input-small {
