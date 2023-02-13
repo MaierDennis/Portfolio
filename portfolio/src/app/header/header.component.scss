@@ -1,4 +1,5 @@
 .header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6,12 +7,22 @@
     padding-left: 100px;
     padding-right: 100px;
     height: 100px;
+    width: calc(100vw - 200px);
     max-width: 100%;
+    box-shadow:0px 1px 3px black;
+    background-color: #141d2f;
+    z-index: 3;
+    top: 0;
 }
 
 .header-name {
+    display: flex;
+    flex-direction: row;
     font-size: 35px;
     font-weight: 600;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .d-none {
@@ -40,6 +51,7 @@
     .header {
         padding-left: 50px;
         padding-right: 50px;
+        width: calc(100vw - 100px);
     }
 
     .header-name {
@@ -73,6 +85,7 @@
     .header {
         padding-left: 20px;
         padding-right: 20px;
+        width: calc(100vw - 40px);
     }
 
     .header-name {

@@ -1,16 +1,20 @@
 <div (window:resize)="onResize($event)" class="header">
-  <div class="header-name">
-    Dennis
+  <div class="header-name"  routerLink="/">
+    <h3>D</h3>
+    <h3 style="color: #00BEE8;">e</h3>
+    <h3>nn</h3>
+    <h3 style="color: #4B47FF;">i</h3>
+    <h3>s</h3>
   </div>
 
-  <div *ngIf="!mobile" class="header-navigation">
+  <div *ngIf="!mobile" class="header-navigation" routerLink="/">
     <a href="#about-me">About me</a>
     <a href="#skills">Skills</a>
     <a href="#portfolio">Portfolio</a>
   </div>
 
   <div *ngIf="mobile">
-    <button mat-button [matMenuTriggerFor]="menu"><img src="assets/img/burger.png"></button>
+    <button mat-button [matMenuTriggerFor]="menu"><img src="/../assets/img/burger.png"></button>
     <mat-menu #menu="matMenu">
       <a href="#about-me"><button mat-menu-item>About me</button></a>
       <a href="#skills"><button mat-menu-item>Skills</button></a>

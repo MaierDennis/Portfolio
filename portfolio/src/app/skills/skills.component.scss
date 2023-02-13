@@ -5,6 +5,7 @@
     justify-content: space-between;
     overflow-x: hidden;
     max-width: 100%;
+    padding-top: 10vh;
 }
 
 .skill-icons {
@@ -20,7 +21,7 @@
     margin-bottom: 50px;
 
     img {
-        height: 80px;
+        height: 110px;
         margin-right: 60px
     }
 
@@ -70,10 +71,19 @@
     }
 }
 
+@media(max-width: 1400px) {
+    .row {
+        img {
+            height: 100px;
+            margin-right: 40px;
+        }
+    }
+}
+
 @media(max-width: 1200px) {
     .row {
         img {
-            height: 70px;
+            height: 80px;
             margin-right: 40px;
         }
     }

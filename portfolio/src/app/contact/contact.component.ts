@@ -12,6 +12,9 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
+  sendMailUrl:string = 'https://maier-dennis.de/send_mail/send_mail.php'
+  
+  
   send :boolean = false;
   sendSuccess : boolean = false;
   failed : boolean = false;
@@ -32,7 +35,7 @@ export class ContactComponent {
   
     async sendData(fd:FormData){
       try{
-        let response = await fetch('https://dennis-maier.developerakademie.net/Portfolio/send_mail/send_mail.php', {
+        let response = await fetch(this.sendMailUrl, {
           method: 'POST',
           body: fd
         });
